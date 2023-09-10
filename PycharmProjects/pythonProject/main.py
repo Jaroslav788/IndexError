@@ -1,17 +1,13 @@
-def count_vowels(input_string):
-    vowels = "aeiouAEIOU"
-    vowel_count = 0
+try:
 
-    for char in input_string:
-        if char in vowels:
-            vowel_count += 1
+    my_list = [1, 2, 3]
+    index = 2
+    value = my_list[index]
+except IndexError:
+    print("Помилка: Ви спробували отримати доступ до неправильного індексу в списку.")
+else:
+    print("Значення знайдено:", value)
 
-    return vowel_count
-
-
-user_input = input("Введіть рядок: ")
-result = count_vowels(user_input)
-print("Кількість голосних у рядку:", result)
 
 
 
