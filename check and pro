@@ -1,0 +1,11 @@
+def get_two_numbers():
+    while True:
+        try:
+            num1 = float(input("Введіть перше число: "))
+            num2 = float(input("Введіть друге число: "))
+            return num1, num2
+        except ValueError:
+            print("Помилка: Введені дані не є числами. Спробуйте ще раз.")
+
+num1, num2 = get_two_numbers()
+print("Ви ввели числа:", num1, "і", num2)
